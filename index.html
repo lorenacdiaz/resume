@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorena Diaz</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#mainContent" class="sr-only">Skip content</a>
+    <!-- Panel Setting -->
+    <div role="region" aria-label="Accessibility Settings. Theme options." class="settings-panel">
+        <button id="langBtn" onclick="toggleLang()" class="p-4   mr-4 bg-zinc-950 dark:bg-slate-500 text-white cursor-pointer md:min-w-14">
+        ES
+        </button>
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle" class="btn bg-white dark:bg-zinc-950 dark:text-zinc-200 rounded-3xl text-sm font-medium tracking-wide" aria-label="Toggle Dark mode button">
+            <span class="dark:hidden" aria-hidden="true">
+                <i class="fa-solid fa-sun"></i>
+                Light Theme
+            </span>
+            <span class="hidden dark:inline-block" aria-hidden="true">
+                <i class="fa-solid fa-moon"></i>
+                Dark Theme
+            </span>
+        </button>
+        <button id="increaseFont" aria-label="Increase font size" class="btn">
+            <i class="fa-solid fa-font"></i>+
+        </button>
+        <button id="resetFont" aria-label="Reset font size" class="btn">
+            <i class="fa-solid fa-font"></i>
+        </button>
+    </div>
+
+    <header class="theme-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+            <div class="hero">
+                <div class="">
+                    <img src="images/lorena-c-diaz.png" alt="Foto personal de Lorena Diaz" class="max-h-[370px] w-auto">
+                </div>
+            </div>
+
+            <div class="md:flex flex-col justify-center">
+                <h1>Lorena Diaz <span data-i18n="time_0_job"></span></h1>
+                <address>
+                    <ul class="social-list">
+                        <li><a href="https://www.linkedin.com/in/lorenacdiaz/" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/sukhita.ar/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a> </li>
+                        <li><a href="mailto:diaz.lorenacristina@gmail.com" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </header>
+    <main id="mainContent">
+        <section class="resume">
+            <article aria-label="Introduction" class="pt-5 lg:pt-14">
+                <span data-i18n="about"></span>
+            </article>
+            <article aria-label="Skills">
+                <h2 data-i18n="skills"></h2>
+                <ul class="skill-list">
+                    <li>HTML/CSS</li>
+                    <li>TailwindCSS</li>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>React.js</li>
+                    <li>Alpine.js</li>
+                    <li>REST APIs</li>
+                    <li>GSAP Animations</li>
+                    <li>WordPress</li>
+                    <li>WP's Themes</li>
+                    <li>GitLab</li>
+                    <li>GitHub</li>
+                    <li>NPM</li>
+                    <li>Docker</li>
+                </ul>
+            </article>
+            <article aria-label="Education">
+                <h2 data-i18n="education"></h2>
+                <dl class="detail-list">
+                    <dt>COMPUTER SYSTEMS ANALYST</dt>
+                    <dd>Instituto San Nicolás De Bari. San Nicolás. Buenos Aires.</dd>
+
+                    <dt>DEVELOPING MICROSOFT ASP.NET WEB APPLICATIONS</dt>
+                    <dd>Full Solutions. Rosario. Santa Fe.</dd>
+
+                    <dt>DIGITAL ART</dt>
+                    <dd>DaVinci School. Buenos Aires.</dd>
+                </dl>
+            </article>
+            <article aria-label="Languages">
+                <h2 data-i18n="languages"></h2>
+                <ul class="space-y-4">
+                    <li>
+                        <strong data-i18n="lang_spanish"> </strong> <span data-i18n="lang_spanish_native"></span>
+                    </li>
+                    <li>
+                        <strong data-i18n="lang_english"> </strong> <span data-i18n="lang_level"></span>
+                        <p data-i18n="lang_note"></p>
+                    </li>
+                </ul>
+            </article>
+            <article aria-label="Job experience">
+                <h2 data-i18n="experience"></h2>
+                <ul class="timeline">
+                    <li class="item">
+                        <span data-i18n="time_0" class="time"></span>
+                        <div class="description">
+                            <h3 data-i18n="time_0_company"></h3>
+                            <h4 data-i18n="time_0_job"></h4>
+                            <p data-i18n="time_0_description"></p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span data-i18n="time_1" class="time"></span>
+                        <div class="description">
+                            <h3 data-i18n="time_1_company"></h3>
+                            <h4 data-i18n="time_1_job"></h4>
+                            <p data-i18n="time_1_description"></p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span data-i18n="time_2" class="time"></span>
+                        <div class="description">
+                            <h3 data-i18n="time_2_company"></h3>
+                            <h4 data-i18n="time_1_job"></h4>
+                            <p data-i18n="time_2_description"></p>
+                            <ul class="space-y-4 mb-8 lg:mb-10">
+                                <li data-i18n="time_2_li_1"></li>
+                                <li data-i18n="time_2_li_2"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span data-i18n="time_3" class="time"></span>
+                        <div class="description">
+                            <h3 data-i18n="time_3_company"></h3>
+                            <h4 data-i18n="time_3_job"></h4>
+                            <p data-i18n="time_3_description"></p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span data-i18n="time_4" class="time"></span>
+                        <div class="description">
+                            <h3 data-i18n="time_4_company"></h3>
+                            <h4 data-i18n="time_1_job"></h4>
+                            <p data-i18n="time_4_description"></p>
+                            <ul class="space-y-4">
+                                <li data-i18n="time_4_li_1"></li>
+                                <li data-i18n="time_4_li_2"></li>
+                                <li data-i18n="time_4_li_3"></li>
+                            </ul>
+                        </div>
+                    </li>
+            </article>
+        </section>
+    </main>
+    <script src="js/translations.js"></script>
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            if (document.body.classList.contains('dark')) {
+                document.body.classList.remove('dark');
+            } else {
+                document.body.classList.add('dark');
+            }
+        });
+
+        const body = document.querySelector('body');
+        let fontSizeLevel = 0; 
+        
+        document.getElementById('increaseFont').addEventListener('click', () => {
+        if (fontSizeLevel < 2) fontSizeLevel++;
+        applyFontSize();
+        });
+
+        document.getElementById('resetFont').addEventListener('click', () => {
+        fontSizeLevel = 0;
+        applyFontSize();
+        });
+
+        function applyFontSize() {
+            switch (fontSizeLevel) {
+                case -1:
+                    body.classList.add('OM-level--1');
+                    break;
+                case 0:
+                    if (body.classList.contains('custom-theme-extralargefonts')) {
+                        body.classList.remove('custom-theme-extralargefonts');       
+                    } else if (body.classList.contains('custom-theme-largefonts')) {
+                        body.classList.remove('custom-theme-largefonts');       
+                    }
+                    break;
+                case 1:
+                    if (body.classList.contains('custom-theme-extralargefonts')) {
+                        body.classList.remove('custom-theme-extralargefonts');       
+                    }
+                    body.classList.add('custom-theme-largefonts');
+                    break;
+                case 2:
+                    if (body.classList.contains('custom-theme-largefonts')) {
+                        body.classList.remove('custom-theme-largefonts');       
+                    }
+                    body.classList.add('custom-theme-extralargefonts');
+                    break;    
+            }
+        }
+    </script>
+</body>
+</html>
